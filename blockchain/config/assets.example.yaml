@@ -1,0 +1,18 @@
+# Asset registry template. Never commit API keys or private credentials.
+assets:
+  - symbol: EXAMPLE
+    chain: ethereum
+    contract: "0x0000000000000000000000000000000000000000"
+    decimals: 18
+    trusted_venues: []
+    known_entities: []
+
+providers:
+  rpc:
+    ethereum: "${ETHEREUM_RPC_URL}"
+  etherscan:
+    api_key: "${ETHERSCAN_API_KEY}"
+  dune:
+    api_key: "${DUNE_API_KEY}"
+  coingecko:
+    api_key: "${COINGECKO_API_KEY}"
